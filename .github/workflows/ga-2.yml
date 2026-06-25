@@ -7,6 +7,9 @@ jobs:
     checkout:
         runs-on: ubuntu-latest
         steps:
+            - name: checkout the repo
+              uses: actions/checkout@v7
+
             - name: List the files
               run: ls -lart
 
